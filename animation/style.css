@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    padding: 1rem;
+    width: 100vw;
+}
+
+.animparent {
+    width: 100%;
+    position: relative;
+}
+
+.animation {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    animation: moveto 3s ease infinite;
+}
+
+@keyframes moveto {
+    0% {
+       border-radius: 0;
+    }
+
+    100% {
+        border-radius: 50%;
+    }
+}
